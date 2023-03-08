@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>My Favorite Artworks</title>
+</head>
+<body>
+    <!-- Gallery -->
+    <section class="container main">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1 popup" id="fig1" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="/images/Under-the-Wave-off-Kanagawa.jpg" alt="Under the Wave off Kanagawa, also known as The Great Wave" id="24645" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h5>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--2 popup" id="fig2" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Icebound.jpg" alt="Icebound" id="72801" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h5>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--3 popup" id="fig3" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Bordighera.jpg" alt="Bordighera" id="81537" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--4 popup" id="fig4" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Fisherman's-Cottage.jpg" alt="Fisherman's Cottage" id="152437" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--5 popup" id="fig5" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Cranes-on-snow-covered-pine.jpg" alt="Cranes on snow-covered pine" id="21720" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--6 popup" id="fig6" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Barks-Fleeing-Before-the-Storm.jpg" alt="Barks Fleeing Before the Storm" id="889" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--7 popup" id="fig7" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/New-England-Scenery.jpg" alt="New England Scenery" id="57163" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--8 popup" id="fig8" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Coming-Squall.jpg" alt="Coming Squall (Nahant Beach with a Summer Shower)" id="185185" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--9 popup" id="fig9" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/The-Coast-of-Labrador.jpg" alt="The Coast of Labrador" id="100489" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--10 popup" id="fig10" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/Summit-of-the-Sierras.jpg" alt="Summit of the Sierras" id="24342" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+            <figure class="gallery__item gallery__item--11 popup" id="fig11" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/The-Marsh.jpg" alt="The Marsh" id="880" class="gallery__img">
+                <div class="popuptext" id="my-popup">
+                    <h1 id="head"></h1>
+                    <h3 id="subhead"></h3>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <p>Website &copy; Kati McConaghy 2023. All artwork part of the public domain via the Art Institute of Chicago <a href="https://www.artic.edu/open-access/open-access-images" id="open_access">(artic.edu)</a></p>
+    </footer>
+</body>
+</html>

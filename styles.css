@@ -1,0 +1,166 @@
+* {
+    /* border: solid 2px red; */
+    box-sizing: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url(/images/orange-teal-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    margin-top: -20px;
+    margin-bottom: -50px;
+}
+
+.gallery {
+    /* padding: 5%; */
+    padding: 60px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 0.5rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    padding: 7px;
+    background-color: rgba(255, 160, 122, 0.678);
+    /* position: relative; */
+}
+
+.gallery__img:hover {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 7px;
+    background-color: rgba(23, 119, 129, 0.568);
+}
+
+.gallery__item--1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery__item--2 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gallery__item--5 {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--6 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--7 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--8 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gallery__item--9 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--10 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--11 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+footer {
+    background-color: rgb(255, 160, 122);
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#open_access {
+    color: black;
+    text-decoration: none;
+}
+
+#head {
+    text-decoration: underline;
+}
+
+#subhead {
+    font-size: medium;
+}
+
+.popup {
+    cursor: auto;
+    user-select: none;
+}
+
+.popuptext {
+    visibility: hidden;
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    background-color: rgba(23, 118, 129, 0.83);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+.popup .show {
+    visibility: visible;
+    animation: fadeIn 2s;
+}
